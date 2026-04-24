@@ -56618,7 +56618,7 @@ break}m.al(new A.aNq(m))
 p=5
 k=m.glW().dM($.H0(),t.b0)
 s=8
-return A.m(k.a.gie().CC(l),$async$A3)
+return A.m(k.a.gie().CC(l,"https://carameloai.github.io"),$async$A3)
 case 8:g=m.c
 if(g!=null)g.ao(t.Pu).f.yC(B.aMN)
 n.push(7)
@@ -112515,7 +112515,9 @@ o=c.c
 if(o!=null)l.l(0,"Authorization","Bearer "+A.j(o))
 n=c.f
 if(n==null){o=t.N
-n=A.q(o,o)}m=A.cM(a,0,null)
+n=A.q(o,o)}o=c.d
+if(o!=null){o.toString
+n.l(0,"redirect_to",o)}m=A.cM(a,0,null)
 o=A.e7(m.gho(),t.N,t.z)
 o.E(0,n)
 s=3
@@ -112793,9 +112795,9 @@ break
 case 10:case 6:return A.u(null,r)
 case 1:return A.t(p.at(-1),r)}})
 return A.v($async$pL,r)},
-CC(a){return this.aRX(a)},
-aRX(a){var s=0,r=A.w(t.H),q=this,p,o,n,m,l
-var $async$CC=A.x(function(b,c){if(b===1)return A.t(c,r)
+CC(a,b){return this.aRX(a,b)},
+aRX(a,b){var s=0,r=A.w(t.H),q=this,p,o,n,m,l
+var $async$CC=A.x(function(c,d){if(c===1)return A.t(d,r)
 for(;;)switch(s){case 0:s=q.ay===B.iS?2:4
 break
 case 2:p=A.bgA()
@@ -112807,7 +112809,7 @@ break
 case 4:o=null
 case 3:n=t.N
 m=A.ai(["captcha_token",null],n,t.u)
-l=A.BD(A.ai(["email",a,"gotrue_meta_security",m,"code_challenge",o,"code_challenge_method",o!=null?"s256":null],n,t.X),q.e,null,null,null,null)
+l=A.BD(A.ai(["email",a,"gotrue_meta_security",m,"code_challenge",o,"code_challenge_method",o!=null?"s256":null],n,t.X),q.e,null,null,null,b)
 s=6
 return A.m(q.grV().o_(q.d+"/recover",B.id,l),$async$CC)
 case 6:return A.u(null,r)}})
